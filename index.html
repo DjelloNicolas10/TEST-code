@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Vídeo e Texto Auto-digitado</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<header>
+
+    <div>
+        <img src="imagem/Logotipo_simples_para_igreja_verde_e_branco-removebg-preview.png" alt="">
+    </div>
+
+    <div class="div-lista">
+        <nav>
+            <ul class="nav-links">
+                <li> <a href="">HOME</a></li>  
+                <li> <a href="">WORK</a></li>
+                <li> <a href="">SELLER'S</a></li>
+                <li> <a href="">CONTACTS</a></li>
+            </ul>
+        </div>
+
+
+            
+
+
+  <!-- Criamos nossa caixa (DIV) para guardar os elementos do Hamburguer quando estiver aberto -->
+  <div class="mobile-menu" id="mobileMenu">
+
+      <!-- Botão para ser utilizado para fechamento da lista -->
+      <button id="closeButton" class="close">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <!-- Essa lista é do Menu Hamburguer quando estiver aberto. -->
+      <ul class="nav-links-mobile">
+          <li> <a href="">HOME</a></li>  
+          <li> <a href="">WORK</a></li>
+          <li> <a href="">SELLER'S</a></li>
+          <li> <a href="">CONTACTS</a></li>
+      </ul>
+
+
+      <div id="btn-mobile" class="cad-mobile">
+        <button>
+          <a href="form.html" target="_blank">
+             <p>DONATE</p>
+          </a>
+        </button>
+      </div>
+      <!-- Fim da caixa do Menu Hamburguer (Quando estiver aberto) -->
+  </div>
+
+  <!-- Botão de Hamburguer, ele está fora da Div justamente por ser um elemento singular -->
+<button class="hamburguer" id="hamburguerButton">
+    <ion-icon name="menu-outline"></ion-icon>
+</button>
+
+<!-- Fim do Menu de Navegação -->
+    </nav>
+</div>
+
+<div id="btn-header">
+         <a href="form.html" target="_blank">
+              <button> Donate > </button>
+           </a>
+       
+    </div>
+
+          <!-- Aplicação do ícone whatsapp na página (Target_blank serve aqui no meu código para usuário abrir uma outra janela.) -->
+      <div class="whatsapp">
+        <a href="https://web.whatsapp.com/" target="_blank">
+        <img src="imagem/whatsapp (1).png" alt="ícone do whatsApp">
+        </a>
+    </div>
+
+</header>
+
+
+
+
+    <div class="video-container">
+        <video autoplay muted loop class="background-video">
+            <source src="videos/148594-794221537_small.mp4" type="video/mp4">
+        </video>
+        <div class="text-container">
+            <h1 id="auto-text"></h1> <br>
+            <h2>
+                Sainteté - Parole - Puissance
+            </h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
