@@ -9,11 +9,14 @@ function typeWriter(element, text, i, speed) {
     }
 }
 
+
 // Iniciar o efeito assim que a página carregar
 window.onload = function() {
     var text = "WELCOME TO MI2RS CHURCH"; // Texto que você quer exibir
-    var speed = 100; // Velocidade do efeito de digitação (em milissegundos)
+    var speed = 150; // Velocidade do efeito de digitação (em milissegundos)
     var element = document.getElementById("auto-text");
+    loop = true,
+    fadOut = text,
     typeWriter(element, text, 0, speed);
 };
 

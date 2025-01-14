@@ -1,34 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Fonte */
+
 
 *{
     margin: 0;
     padding: 0;
     list-style: none;
+    font-family: 'poppins';
 }
 
 /* Estilo do header */
 header {
     background-color: black;
-    padding: 15px; 
+    padding: 10px; 
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 999;
 }
+
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 10rem;
 }
 
 
 header img {
-   width: 170px;
-   height: 170px;
+   max-height: 80px;
 }
 
-
+ 
 header nav ul {
   display: flex;
   justify-content: center;
@@ -45,40 +48,30 @@ header nav ul li a {
   text-align: center;
 } 
 
-
-
-#btn-header a button {   /*Nossa ID do Botão de Login */
-    color: black;
-    background-color: rgb(134, 115, 78);
-    width: 180px; /*Largura do botão*/
-    height: 50px; /*Altura do botão*/
-    border-radius: 50px; /*Arredondamento da borda*/
-    border-color: white; /*Cor da borda*/
-    font-weight: 500; /*Peso da fonte*/
-    margin-left: 2em;
-    font-size: 1.1rem;
+header nav ul li a:hover {
+    color: rgb(190, 87, 27);
+    text-decoration: overline 2px white;
+    transition: 1s;
 }
 
 
-#btn-header > button { /* Aqui chamamos nossa ID e onde queremos fazer alterações, no caso o nosso BOTÃO (button)*/
-    padding: 8px; /*  Cuida do Preenchimento */
-    background-color: rgb(134, 115, 78); /* Aqui deixamos o fundo do Botão transparent, ou seja sem o fundo Branco que estava em primeiro plano */
-    border: none; /* None é usado para retirar algo, nesse caso a borda. */ 
-}
+.donate-button1  a {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+  }
 
-#btn-header > button > a { /* Estamos chamando aqui nossa TAG de Link para alteração. */ 
-    display: flex; /* Resposável por colocar os itens na mesma linha (lado a lado)  */
-    align-items: center; /* Alinhar os itens para o centro */
-    gap: 5px;
-    color: white; /*Cor da letra */
-    text-decoration: none; /* Responsável por tirar o sublinhado que estava visível */
-    font-weight: 400; /* espessura da fonte */
-}
+  .donate-button > a {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 10px;
+  }
 
-#btn-header > button > a { /* Aqui estamos mexendo no ICON do botão*/
-    width: 1.8rem; /* Largura */
-    height: auto; /* Tamanho */
-}
 
 
 
@@ -103,7 +96,7 @@ header nav ul li a {
     display: flex; /*Tornando os itens (LISTAS) flexíveis*/
     flex-direction: column; /*Estamos direcionando o posicionamento dessas listas*/
     text-align: end; /*Alinhando o texto ao centro*/
-    gap: 1.2rem; /*Espaço entre as listas */
+    gap: 1rem; /*Espaço entre as listas */
     /* width: 0%; Zeramos a largura podendo retirar essa linha para testar visualizão */
     list-style: none; /*Estilo de lista desabilitado*/
     /* padding: 0; Preenchimento zerado, podendo também ser retirado para testes */
@@ -111,13 +104,18 @@ header nav ul li a {
 
 .nav-links-mobile li { /*listas da versão Mobile*/
     /* border-bottom: 1px solid #787272; Bordar inferior de cada lista */  /*para retirar os traços em baixo das listas no mobile menu*/
-    padding-bottom: 1.2rem; /*Tamanho da borda*/
+    padding-bottom: 1rem; /*Tamanho da borda*/
 }
 
 .nav-links-mobile li a {
     text-decoration: none;
     font-size: 1.2rem;
     color: white;
+}
+
+.nav-links-mobile li a:hover {
+    color: rgb(190, 87, 27);
+    transition: 1s;
 }
 
 
@@ -205,31 +203,58 @@ body, html {
     font-size: 2em;
     font-weight: bold;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
 }
 
 .text-container h2 {
     color: white;
     align-items: center;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
+
+.text-container button {  /*Nossa ID do Botão de Login */
+        color: rgb(116, 6, 6);
+        background-color: white;
+        width: 280px; /*Largura do botão*/
+        height: 50px; /*Altura do botão*/
+        border-radius: 50px; /*Arredondamento da borda*/
+        border-color: rgb(126, 114, 92); /*Cor da borda*/
+        font-weight: 700; /*Peso da fonte*/
+        margin-left: 2em;
+        font-size: 1rem;
+        margin-top: 2.7rem;
+    }
+
+    .text-container button:hover {
+        color: white;
+        border-color: rgb(134, 115, 78);
+        background-color: rgb(116, 6, 6);
+        transition: 1s;
+    }
+  
+    
+
 
 
 /* Esitilo da responsividade */
 
+@media (max-width: 768px) {
+     header {
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      
+    }
+  }
 
 @media (max-width: 830px) {
 
-    header {
-       text-align: center;
-    }
-
     header img {
-        text-align: center;
         width: 100px;
         height: 120px;
     }
 
-   #btn-header a button {
+    .donate-button1  a {
       display: none;
   }
 
@@ -250,20 +275,16 @@ body, html {
 
 
 
-
 @media(max-width: 834px) {
 
-    header {
-        
-    }
-
+   
     html {
       font-size: 12px;
     } 
 
 
-    header img {
-      text-align: center;
+    header {
+      display: flex;
      }
 
 
@@ -306,9 +327,8 @@ body, html {
       font-weight: 500; /*Peso da fonte*/
       margin-left: 2em;
       font-size: 1.1rem;
+      cursor: pointer;
     }
-
-   
 
 
     .cad-mobile button a {
