@@ -1,0 +1,122 @@
+/* Estilização do Footer */
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .footer-section h4 {
+    color: #ecf0f1;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .footer-section p,
+  .footer-section a {
+    color: #bdc3c7;
+    line-height: 1.6;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-section a:hover {
+    color: #ff6600ee;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-section ul li a {
+    color: #bdc3c7;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #ff6600ee;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social-links a {
+    color: #ecf0f1;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    color: #ff6600ee;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #34495e;
+    padding-top: 10px;
+    font-size: 12px;
+    color: #bdc3c7;
+  }
+  
+  /* Responsividade para dispositivos móveis */
+  @media (max-width: 834px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .footer-section ul li {
+      margin-bottom: 10px;
+    }
+  
+    .footer-section h4 {
+      font-size: 20px;
+    }
+  
+    .social-links {
+      justify-content: center;
+    }
+  }
+  
+  /* Responsividade para dispositivos menores (smartphones em modo retrato) */
+  @media (max-width: 480px) {
+    .footer-section p, .footer-section a {
+      font-size: 12px;
+    }
+  
+    .social-links a {
+      font-size: 18px;
+    }
+  
+    .footer-bottom {
+      font-size: 10px;
+    }
+  }
+  
