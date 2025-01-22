@@ -97,7 +97,8 @@ body {
     }
 
     @media (max-width: 480px) {
-      .section_03 {
+      .section_03 .image-container img {
         flex-direction: column;
+        margin-right: 10px;
       }
     }
