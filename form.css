@@ -1,12 +1,4 @@
 
-.section_04 {
-    padding: 60px 8%;
-}
-
-.section_04 p {
-   font-size: 1em;
-   text-align: center;
-}
 .form-container {
     background-color: white;
     padding: 40px;
@@ -14,6 +6,7 @@
     margin: 0 auto;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
 }
 h2 {
     text-align: center;

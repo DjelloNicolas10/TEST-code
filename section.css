@@ -15,9 +15,9 @@ body {
 
 
   .section_01 h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: white;
-    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
   }
   .line {
@@ -29,6 +29,7 @@ body {
   .section_01 p {
     color: white;
     font-size: 1em;
+    text-align: center;
   }
 
   .section_02 {
@@ -42,10 +43,20 @@ body {
     text-align: center;
   }
 
+  
+.section_04 {
+  padding: 60px 8%;
+}
+
+.section_04 p {
+ font-size: 1em;
+ text-align: center;
+}
+
   .image-container {
     display: flex;
     justify-content: space-around;
-    gap: 12px;
+    gap: 8px;
     flex-wrap: wrap;
   }
 
@@ -83,4 +94,10 @@ body {
       align-items: center;
       flex-wrap: wrap;
     }
+    }
+
+    @media (max-width: 480px) {
+      .section_03 {
+        flex-direction: column;
+      }
     }

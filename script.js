@@ -31,3 +31,9 @@ hamburguerButton.addEventListener("click", function() {
 closeButton.addEventListener("click", function() {
     mobileMenu.classList.remove("flex");
 });
+
+ScrollReveal().reveal(".image-container", {
+    distance: "100px",
+    origin: "left",
+    duration: 2800,
+});

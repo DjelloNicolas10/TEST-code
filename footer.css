@@ -23,7 +23,7 @@
   .footer-section h4 {
     color: #ecf0f1;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 16px;
   }
   
   .footer-section p,
@@ -38,19 +38,6 @@
     color: #ff6600ee;
   }
   
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-section ul li {
-    margin-bottom: 5px;
-  }
-  
-  .footer-section ul li a {
-    color: #bdc3c7;
-    text-decoration: none;
-  }
   
   .footer-section ul li a:hover {
     color: #ff6600ee;
@@ -92,9 +79,6 @@
       margin-bottom: 20px;
     }
   
-    .footer-section ul li {
-      margin-bottom: 10px;
-    }
   
     .footer-section h4 {
       font-size: 20px;

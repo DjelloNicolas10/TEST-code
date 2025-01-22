@@ -12,6 +12,23 @@ body {
     background-color: #2f4052;
 }
 
+html::-webkit-scrollbar {
+    /*Personaliza o estilo da barra de rolagem no WebKit (Chrome e Safari)*/
+    width: 0.8rem;
+}
+
+
+html::-webkit-scrollbar-track {
+    /*Personaliza o estilo da barra de rolagem no WebKit (Chrome e Safari)*/
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    /*Personaliza o estilo da barra de rolagem no WebKit (Chrome e Safari)*/
+    background: #fff;
+    border-radius: 5rem;
+}
+
 header {
     background: linear-gradient(90deg, #000000fd, #435464);
     width: 100%;
@@ -86,14 +103,12 @@ header nav ul li a:hover {
 
 
 
-
-
 .mobile-menu { /*Estilização da caixa Mobile quando aberta*/
     display: none; /*Display: Nenhum*/
     position: fixed; /*Posição fixa na parte direita da página*/
     top: 0; /*Superior em 0 fazendo a caixa encostar ao topo*/
     right: 0; /*Direita em 0 fazendo a caixa encostar a direita*/
-    width: 35%; /*Largura em porcentagem da caixa*/
+    width: 50%; /*Largura em porcentagem da caixa*/
     height: 100%; /*Altura de 100% da tela*/
     background: linear-gradient(90deg, #000000, #435464); /*Cor de fundo*/
     flex-direction: column; /*direção dos itens dentro da caixa */
@@ -270,8 +285,9 @@ body, html {
       display: none;
   }
 
-  .section-03 img {
+  .section_03 img {
       margin: auto;
+      margin-right: 10px;
   }
 
  .whatsapp img {
@@ -306,7 +322,7 @@ body, html {
       display: block;
       color:white;  
       margin-top: 12px;  
-      margin-left: 45%;
+      margin-left: 40%;
     }
 
     .mobile-menu {
