@@ -61,6 +61,29 @@ body {
   font-size: 1.4rem;
   color: #fff;
 }
+
+.section_05  button {
+   /*Nossa ID do Botão de Login */
+    color: rgb(116, 6, 6);
+    background-color: white;
+    width: 140px; /*Largura do botão*/
+    height: 30px; /*Altura do botão*/
+    border-radius: 50px; /*Arredondamento da borda*/
+    border-color: rgb(126, 114, 92); /*Cor da borda*/
+    font-weight: 400; /*Peso da fonte*/
+    margin-left: 6em;
+    font-size: 0.8rem;
+}
+
+.section_05 button :hover {
+    color: white;
+    border-color: rgb(134, 115, 78);
+    background-color: rgb(116, 6, 6);
+    transition: 1s;
+}
+
+
+/* A estilização do container */
   .image-container {
     display: flex;
     justify-content: space-around;
