@@ -32,8 +32,42 @@ closeButton.addEventListener("click", function() {
     mobileMenu.classList.remove("flex");
 });
 
-ScrollReveal().reveal(".image-container", {
-    distance: "100px",
-    origin: "left",
-    duration: 2800,
-});
+
+// Script dos videos
+
+        const carousel = document.querySelector('.carousel');
+    
+        // Adiciona comportamento para focar em um vídeo ao parar o scroll
+        carousel.addEventListener('scroll', () => {
+          clearTimeout(carousel.scrollTimeout);
+    
+          // Delay para identificar quando o scroll terminou
+          carousel.scrollTimeout = setTimeout(() => {
+            const children = Array.from(carousel.children);
+            const carouselRect = carousel.getBoundingClientRect();
+    
+            // Encontra o vídeo mais próximo do centro
+            let closestVideo = null;
+            let closestDistance = Infinity;
+    
+            children.forEach(child => {
+              const childRect = child.getBoundingClientRect();
+              const childCenter = childRect.left + childRect.width / 2;
+              const carouselCenter = carouselRect.left + carouselRect.width / 2;
+              const distance = Math.abs(carouselCenter - childCenter);
+    
+              if (distance < closestDistance) {
+                closestVideo = child;
+                closestDistance = distance;
+              }
+            });
+    
+            // Rola suavemente até o vídeo mais próximo
+            if (closestVideo) {
+              closestVideo.scrollIntoView({
+                behavior: 'smooth',
+                inline: 'center'
+              });
+            }
+          }, 100);
+        });

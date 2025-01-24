@@ -53,6 +53,14 @@ body {
  text-align: center;
 }
 
+.section_05 {
+  padding: 20px;
+}
+
+.section_05 h2 {
+  font-size: 1.4rem;
+  color: #fff;
+}
   .image-container {
     display: flex;
     justify-content: space-around;
