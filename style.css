@@ -30,7 +30,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 header {
-    background: linear-gradient(90deg, #000000fd, #435464);
+    background: linear-gradient(90deg, #000000f6, #435464fb);
     width: 100%;
     padding: 20px 6%;
     position: fixed;
@@ -64,7 +64,7 @@ header nav ul li a {
   margin-right: 1.8em;
   text-decoration: none;
   font-size: 1.2rem;
-  color: white;
+  color: rgb(230, 229, 229);
   text-align: center;
 } 
 
