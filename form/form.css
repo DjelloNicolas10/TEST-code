@@ -24,7 +24,7 @@ body {
 }
 
 .form-container {
-    background: #272727ce;
+    background: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -61,7 +61,7 @@ body {
 }
 
 .form-group label {
-    color: black;
+    color: bl;
 }
 
 .form-group option {
