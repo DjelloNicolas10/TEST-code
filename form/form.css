@@ -24,7 +24,7 @@ body {
 }
 
 .form-container {
-    background: #000000e7;
+    background: #272727ce;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -36,7 +36,7 @@ body {
     margin-bottom: 28px;
     font-size: 22px;
     text-align: center;
-    color: #fff;
+    color: black;
 }
 
 .form-group {
@@ -57,11 +57,11 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     font-size: 16px;
-    color: #fff;
+    color: black;
 }
 
 .form-group label {
-    color: white;
+    color: black;
 }
 
 .form-group option {
