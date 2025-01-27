@@ -6,7 +6,6 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    text-decoration: none;
   }
 
   .section_01 {
@@ -72,10 +71,8 @@ body {
     border-radius: 50px; /*Arredondamento da borda*/
     border-color: rgb(126, 114, 92); /*Cor da borda*/
     font-weight: 400; /*Peso da fonte*/
-    display: flex;
-    justify-content: center;
+    margin-left: 9em;
     font-size: 0.8rem;
-    align-items: center;
 }
 
 .section_05 button :hover {
