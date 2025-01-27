@@ -277,7 +277,6 @@ body, html {
 
 @media (max-width: 1170px) {
 
-
   header {
     top: 0;
     z-index: 999;
@@ -313,12 +312,6 @@ body, html {
     html {
       font-size: 12px;
     } 
-/* 
-    header {
-      display: flex;
-      padding: 10px;
-      justify-content: space-between;
-     } */
 
     .nav-links {
       display: none;
