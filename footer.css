@@ -51,6 +51,11 @@ ul.text-sm {
   color: #ca9a62c9;
 }
 
+ul.text-sm:hover {
+  color: white;
+  transition: 3s ease;
+}
+
 ul.text-sm li {
   margin-bottom: 8px;
 }
@@ -59,6 +64,7 @@ ul.text-sm li {
   color: #fff;
   font-size: 15px;
 }
+
 
 ul.text-sm li span.font-bold {
   font-weight: bold;
@@ -78,6 +84,7 @@ ul.text-sm li span.font-bold {
 
 .social-icons a:hover {
   color: rgb(196, 170, 122);
+  transition: 3s ease;
 }
 
 /* Estilo do rodapé final */
