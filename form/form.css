@@ -69,14 +69,14 @@ body {
 }
 
 .form-actions button {
-    background-color: #ffcb45;
+    background-color: #ee790c;
     color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.9s ease;
 }
 
 .form-actions button:hover {
