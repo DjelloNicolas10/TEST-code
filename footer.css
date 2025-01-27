@@ -1,106 +1,128 @@
-/* Estilização do Footer */
+/* Reset de alguns estilos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos do rodapé */
+footer {
+  background-color: #333;
+  padding: 40px 20px;
+}
+
 .footer {
-    background-color: #2c3e50;
-    color: #ecf0f1;
-    padding: 20px 0;
-    font-family: Arial, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+h3.text-xl {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+h4.text-lg {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ca9a62c9;
+}
+
+h4.font-semibold {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #;
+}
+
+ul.text-sm {
+  font-size: 18px;
+  list-style: none;
+  color: #ca9a62c9;
+}
+
+ul.text-sm li {
+  margin-bottom: 8px;
+}
+
+.text-sm{
+  color: #fff;
+  font-size: 15px;
+}
+
+ul.text-sm li span.font-bold {
+  font-weight: bold;
+}
+
+/* Ícones de redes sociais */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: black;
+}
+
+/* Estilo do rodapé final */
+.termino {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.termino p {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
+
   .footer-section {
-    flex: 1;
-    min-width: 250px;
-  }
-  
-  .footer-section h4 {
-    color: #ecf0f1;
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
-  
-  .footer-section p,
-  .footer-section a {
-    color: #bdc3c7;
-    line-height: 1.6;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  .footer-section a:hover {
-    color: #ff6600ee;
-  }
-  
-  
-  .footer-section ul li a:hover {
-    color: #ff6600ee;
-  }
-  
-  .social-links {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .social-links a {
-    color: #ecf0f1;
-    font-size: 20px;
-    text-decoration: none;
-  }
-  
-  .social-links a:hover {
-    color: #ff6600ee;
-  }
-  
-  .footer-bottom {
     text-align: center;
-    margin-top: 20px;
-    border-top: 1px solid #34495e;
-    padding-top: 10px;
-    font-size: 12px;
-    color: #bdc3c7;
   }
-  
-  /* Responsividade para dispositivos móveis */
-  @media (max-width: 834px) {
-    .footer-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .footer-section {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-  
-  
-    .footer-section h4 {
-      font-size: 20px;
-    }
-  
-    .social-links {
-      justify-content: center;
-    }
+
+  .social-icons {
+    justify-content: center;
+    margin-top: 10px;
   }
-  
-  /* Responsividade para dispositivos menores (smartphones em modo retrato) */
-  @media (max-width: 480px) {
-    .footer-section p, .footer-section a {
-      font-size: 12px;
-    }
-  
-    .social-links a {
-      font-size: 18px;
-    }
-  
-    .footer-bottom {
-      font-size: 10px;
-    }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 10px;
   }
-  
+
+  .footer-section h3.text-xl {
+    font-size: 20px;
+  }
+
+  .footer-section h4.text-lg, .footer-section h4.font-semibold {
+    font-size: 18px;
+  }
+
+  ul.text-sm {
+    font-size: 15px;
+  }
+}

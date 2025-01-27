@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #2f4052;
+    background-color: black;
 }
 
 html::-webkit-scrollbar {
@@ -30,7 +30,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 header {
-    background: linear-gradient(90deg, #000000f6, #435464fb);
+    background-color: black;
     width: 100%;
     padding: 15px 6%;
     position: sticky;
@@ -108,9 +108,9 @@ header nav ul li a:hover {
     position: fixed; /*Posição fixa na parte direita da página*/
     top: 0; /*Superior em 0 fazendo a caixa encostar ao topo*/
     right: 0; /*Direita em 0 fazendo a caixa encostar a direita*/
-    width: 50%; /*Largura em porcentagem da caixa*/
+    width: 47%; /*Largura em porcentagem da caixa*/
     height: 100%; /*Altura de 100% da tela*/
-    background: linear-gradient(90deg, #000000, #435464); /*Cor de fundo*/
+    background-color: black;
     flex-direction: column; /*direção dos itens dentro da caixa */
     align-items: center; /*Alinhamento na vertical do itens*/
     font-size: 1.8rem; /*tamanho da letra dentro da caixa*/
