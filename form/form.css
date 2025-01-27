@@ -10,8 +10,7 @@
 }
 
 body {
-    background-color: black;
-    color: #333;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,9 +18,16 @@ body {
     padding: 20px;
 }
 
+.form-container .img {
+    text-align: center;
+    border-radius: 100%;
+    top: 0;
+    position: sticky;
+    z-index: 999;
+}
 
 .form-container {
-    background: #b8b6b6;
+    background: #000000e7;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -30,10 +36,10 @@ body {
 }
 
 .form-container h1 {
-    margin-bottom: 20px;
-    font-size: 24px;
+    margin-bottom: 28px;
+    font-size: 22px;
     text-align: center;
-    color: #333;
+    color: #fff;
 }
 
 .form-group {
@@ -51,9 +57,14 @@ body {
 .form-group textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     font-size: 16px;
+    color: #fff;
+}
+
+.form-group label {
+    color: white;
 }
 
 .form-group input:focus,
